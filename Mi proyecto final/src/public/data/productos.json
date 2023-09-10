@@ -1,0 +1,57 @@
+[
+    {
+        "id":1,
+        "nombre": "Alfajor dulce",
+        "descripcion": "Relleno de dulce de leche con bañado de chocolate negro o blanco.",
+        "image":"images/choco-blan.jpg",
+        "precio_venta":"$ 54.99",
+        "cantidad": 5,
+        "type": "module"
+        
+    },
+    {
+        "id":2,
+        "nombre": "Alfajor Malbec",
+        "descripcion": "Relleno de Malbec con bañado de chocolate negro.",
+        "image":"images/malbec.jpg",
+        "precio_venta":"$ 54.99",
+        "cantidad": 5,
+        "type": "module"
+    },
+    {
+        "id":3,
+        "nombre": "Alfajor mani",
+        "descripcion":"Relleno de crema de maní con bañado de chocolate negro." ,
+        "image":"images/mani.jpg",
+        "precio_venta":"$ 54.99",
+        "cantidad": 5,
+        "type": "module"
+    },
+    {
+        "id":4,
+        "nombre": "Alfajor Naranja",
+        "descripcion":"Relleno de naranja y dulce de leche con bañado de chocolate negro." ,
+        "image":"images/naranja.jpg",
+        "precio_venta":"$ 54.99",
+        "cantidad": 5,
+        "type": "module"
+    },
+    {
+        "id":5,
+        "nombre": "Alfajor Nuez",
+        "descripcion":"Relleno de nuez y dulce de leche con bañado de chocolate blanco." ,
+        "image":"images/nuez.jpg",
+        "precio_venta":"$ 54.99",
+        "cantidad": 5,
+        "type": "module"
+    },
+    {
+        "id":6,
+        "nombre": "Alfajor Remolacha",
+        "descripcion":"Relleno de remolacha con bañado de chocolate blanco." ,
+        "image":"images/remol.jpg",
+        "precio_venta":"$ 54.99",
+        "cantidad": 5,
+        "type": "module"
+    }
+]

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda de alfajores </title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/css/style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://fontawesome.com/icons/cart-shopping?f=classic&s=duotone&sz=sm&pc=%23000000&sc=%23e99a5d&so=1"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="index">
+        <header class="header-fixed">
+            <div class="store-logo"> 
+                <a href="/html/index.html" id="text"> <img src="/images/icon_alf-removebg-preview.png"  alt="" width="50px" height="50px"><h1 class="title">Tienda de alfajores</h1> </a>
+                    
+    
+                <nav class="navbar">
+                    <ul class="nav-items">
+                      <li class="nav-item" id="header1"><a href="html/index.html" class="nav-link">Tienda</a></li> 
+                      <li class="nav-item" id="header2"><a href="html/products.html" class="nav-link">Productos</a></li>               
+                      <li class="nav-item"  id="header3"><a href="html/cart.html" class="nav-link">Carrito</a></li>
+                      <li class="nav-item"  id="header4"><a href="html/localized.html" class="nav-link">Sucursales </a></li>
+                      <li class="nav-item"  id="header5"><a href="html/contact.html" class="nav-link">Contacto</a></li>
+                      <input class="menu" type="checkbox" id="menu"/>
+                      <label class="m-item" for="menu"><span class="s-item"></span></label>
+                      <li> <a href="#" class="icon" ><i class="fa fa-bars"></i>
+                      </a></li>
+                    </ul>
+                  </nav>       
+            
+            </div>   
+        </header>
+        <script src="/javascripts/index1.js"></script>
+
+    <main>
+         <h3><p>Tu carrito</p> <img id="logo-cart" src="/images/carrito-de-compras.png" alt=""></h3>
+         <!-- <img src="https://www.pngwing.com/es/free-png-biodd/download" alt="" style="width:30px;height:30px ;"> -->
+
+           <section class="checkout-form">
+                 <form action="#!" method="get">                  
+                       <h6>Información del contacto</h6>
+                         <div class="form-control">
+                          <label for="checkout-email">E-mail</label>
+                          <div>
+                            <span class="fa fa-envelope"></span>
+                            <input type="email" id="checkout-email" name="checkout-email" placeholder="Introduce tu correo electrónico...">
+                          </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="checkout-phone">Cel</label>
+                              <div>
+                                <span class="fa fa-phone"></span>
+                                <input type="tel" name="checkout-phone" id="checkout-phone" placeholder="Introduce tu celular...">
+                              </div> 
+                        </div>
+                        <br>
+                         <h6>Dirección de envío</h6>
+                        <div class="form-control" id="form3">
+                          <label for="checkout-name">Nombre completo</label>
+                          <div>
+                            <span class="fa fa-user-circle"></span>
+                            <input type="text" id="checkout-name" name="checkout-name" placeholder="Introduce tu Nombre completo...">
+                        </div>
+                        <div class="form-control">
+                          <label for="checkout-address">Dirección</label>
+                          <div>
+                            <span class="fa fa-home"></span>
+                            <input type="text" name="checkout-address" id="checkout-address" placeholder="Tu dirección...">
+                          </div>
+                        </div>
+                        <div class="form-control">
+                          <label for="checkout-city">Ciudad</label>
+                          <div>
+                            <span class="fa fa-building"></span>
+                            <input type="text" name="checkout-city" id="checkout-city" placeholder="Tu ciudad...">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-control">
+                            <label for="checkout-country">País</label>
+                            <div>
+                              <span class="fa fa-globe"></span>
+                              <input type="text" name="checkout-country" id="checkout-country" placeholder="Tu país..." list="country-list">
+                              <datalist id="country-list">
+                                <option value="Argentina"></option>
+                                <option value="Brasil"></option>
+                                <option value="Chile"></option>
+                                <option value="Paraguay"></option>
+                                <option value="Uruguay"></option>
+                              </datalist>
+                            </div>
+                          </div>
+                          <div class="form-control">
+                            <label for="checkout-postal">Código Postal</label>
+                            <div>
+                              <span class="fa fa-archive"></span>
+                              <input type="numeric" name="checkout-postal" id="checkout-postal" placeholder="Tu código postal...">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-control checkbox-control">
+                          <input type="checkbox" name="checkout-checkbox" id="checkout-checkbox">
+                          <label for="checkout-checkbox">Guarde esta información para la próxima vez</label>
+                        </div>
+                        <div class="form-control-btn">
+                          <button>Enviar</button>
+                        </div> 
+                  </form>
+           </section> 
+      
+          <section class="checkout-details">
+            <div class="checkout-details-inner">
+              <div class="checkout-lists">
+                <div class="card">
+                  <div class="card-image"><img src="/images/choco-blan.jpg" alt=""></div>
+                  <div class="card-details">
+                    <div class="card-name">Alfajor dulce</div>
+                    <div class="card-price">$54.99 </div>
+                    <div class="card-wheel">
+                      <button>-</button>
+                      <span>1</span>
+                      <button>+</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image"><img src="/images/malbec.jpg" alt=""></div>
+                  <div class="card-details">
+                    <div class="card-name">Alfajor malbec</div>
+                    <div class="card-price">$54.99 </div>
+                    <div class="card-wheel">
+                      <button>-</button>
+                      <span>1</span>
+                      <button>+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-sub">
+                <h6>Subtotal</h6>
+                <p>$109.98</p>
+              </div>
+              <div class="checkout-shipping">
+                <h6>Envío</h6>
+                <p>$150</p>
+              </div>
+              <div class="checkout-total">
+                <h6>Total</h6>
+                <p>$259.98</p>
+              </div> 
+            </div>
+          </div>
+          </section> 
+    </main>
+
+    <script src="/javascripts/carritoAgregado.js"></script>
+
+  
+
+    <div class="max-w-2xl mx-auto">
+
+        <footer class="p-5 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+            <span class="text-sm text-gray-600 sm:text-center dark:text-gray-500">© 2023 <a href="https://github.com/Flaviab13/ecommerce_1" class="hover:underline" target="_blank" >github</a>. Reservados todos los derechos.
+        </span>
+            <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 text-sm text-gray-600 hover:underline md:mr-6 dark:text-gray-400">Acerca de</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Política de privacidad</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Licencia </a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contacto</a>
+                </li>
+            </ul>
+        </footer>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+  </head>
+  <body>
+    <div class="imb">
+      <h1><%= title %></h1>
+      <p>¡Bienvenido a la <%= title %>!</p>
+      <button id="ver" class="btn-1" onclick="VerTienda()">Ver Tienda</button>
+      <script>
+        function VerTienda() {
+          window.location.href = "/Tienda";
+        }
+      </script>
+
+    </div>
+  </body>
+</html>

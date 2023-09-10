@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  /* Body styles */
+  body {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+    /* Header styles */
+    .header-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* background-color: #fff; */
+        background-color: #333;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+      }
+      
+      .store-logo {
+        display: flex;
+        align-items: center;
+        height: 50px;  /* Ni */   
+        /* width: 100%;   */   
+      }
+
+      .store-logo a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        /* color: #333; */
+        color: rgb(240, 240, 240);       
+      }
+
+      a#text{
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      .store-logo img {
+        margin-right: 10px;
+      }
+
+      .store-logo .title {
+        font-family: 'Architects Daughter', cursive;
+        font-size: 24px;
+      }
+
+      .navbar {
+        margin-left: auto;        
+      }
+
+      .nav-items {
+        display: flex;
+        list-style: none;
+        align-items: center;
+      }
+
+      .nav-item {
+        margin-right: 10px;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #333;
+        /* font-weight: bold; */
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        /* color: #e99a5d; */
+        color: #f7d565;
+      }
+
+      .nav-items .icon {
+        display: none;
+      }
+
+      #menu{
+        display: none;
+      }
+
+
+      
+  /* Main styles */
+
+  main{
+    /* display: block; */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 300px; */
+    margin-left: 200px;
+    margin-right: 200px; 
+    height: 859px;
+/*     width: 100%;
+    height: 100%; */
+    flex-direction: column;
+  }
+
+  .title{
+    display: inline;
+   /*  padding-bottom: 20px; */
+    /* width: 100%; */
+  }
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 38px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #253737;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .sub-title{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    width: 100%;
+    color: #416b68;
+
+  }
+
+  form {
+    /* display: inline-block; */
+    display: flex;
+    margin-left:auto;
+    /* margin-right:auto; */
+/*     width: 443px;
+    height: 433px; */
+    padding:30px;
+    border: 1px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(145, 140, 140, 0.5); 
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 33%;
+}
+
+
+textarea{
+    background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px; 
+  width: 276px;
+  height: 110px;
+  border: 1px solid rgba(255,255,255,.6);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; 
+  display:block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:18px;
+  color:#fff;
+  padding-left:45px;
+  padding-right:20px;
+  padding-top:12px;
+  margin-bottom:20px;
+  /* margin-left: 55px; */
+  overflow:hidden;
+  text-decoration: none;
+}
+  
+form input {
+    /* width: 276px; */
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    color:#fff;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    /* margin-left: 55px; */
+   /*  margin-top: 25px; */
+    text-decoration:none;
+}
+
+input[type=submit] {
+    cursor:pointer;
+
+}
+
+input.name {
+    background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; 
+    padding-left:45px;
+    text-decoration:underline;
+    
+}
+
+input.email {
+    background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;
+    padding-left:45px;
+    text-decoration:underline;
+    
+}
+
+input.message {
+    background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;
+    padding-left:45px;
+    text-decoration:underline;
+   
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder{ 
+    color: #fff; 
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {  
+    color: #fff; 
+}
+
+input:focus, textarea:focus { 
+    background-color: rgba(156, 141, 141, 0.39);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden; 
+    text-decoration: none;
+
+}
+
+.btn {
+    width: 138px;
+	  height: 44px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  border-radius: 4px;
+	  /* float:right; */
+     /*  margin-left: 125px; */
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+    background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background: -o-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    /* padding: 10.5px 21px; */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+    color: #e1e1e1;
+    text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.btn:hover {
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: #fff;
+ }
+
+ .btn:active {
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    background: #6da5a3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+    background: -webkit-linear-gradient(top, #416b68, #609391);
+    background: -moz-linear-gradient(top, #416b68, #6da5a3);
+    background: -ms-linear-gradient(top, #416b68, #6da5a3);
+    background: -o-linear-gradient(top, #416b68, #6da5a3);
+    background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+    color: #fff;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+   }
+
+ 
+
+ /* Footer styles */
+
+ div .max-w-2xl.mx-auto{
+    position: fixed;
+    width: 100%;
+  }
+  footer {
+    display: flex; /* Ni */
+    align-items: center; /* Ni */
+    background-color: #fff;
+    /* margin-top: 100px; */
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+ /*    padding-left: 50px;
+    padding-right: 50px; */
+    border-left-width: 100px; /* Ni */
+    /* justify-content: center; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+  
+  .text-gray-600 {
+    color: #666;
+  }
+  
+
+  /* Ni fooster a */
+footer span a{
+    color: #FAD45C;
+    text-decoration: none;
+
+  }
+
+   /* Ni fooster ul */
+  footer ul{
+    list-style: none;
+    display: flex;
+  }
+   /* Ni fooster li  a */
+  footer li a{
+    text-decoration: none;
+    color: #888;
+  }
+
+   /* Ni fooster li */
+  footer li{
+    margin-left: 10px;
+    margin-right: 10px;
+   /*  color: #888; */
+    
+  }
+
+       /* Ni fooster span */
+/*   footer span{
+padding-left: 200px;
+} */
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 550px){
+.store-logo .title {
+    font-size: 18px;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* height: 60px; */
+    overflow:hidden;
+    transition:all ease .5s;   
+  }
+
+  .nav-items ul{
+    margin: 0;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .nav-items ul li{
+    list-style-type: none;
+  }
+
+  .nav-item {
+        /* margin-right: 0;
+          margin-bottom: 5px; */
+          display: none;
+          color: #fff;
+          cursor: pointer;
+          font-size: 12px;
+    }
+
+ .nav-items .m-item {
+            display:block;
+            text-align: center;
+            width: 25px;
+            cursor: pointer;
+    }
+
+.nav-items .icon:hover {
+        color: #FAD45C;
+        cursor: pointer;
+        background-color: transparent;
+    }
+.menu{
+     display: block;
+     }
+.navbar .icon{
+    display: block;
+}
+
+.title{
+    width: 70%;
+  }
+
+  .section-header{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .sub-title{
+    font-size: 12px;
+  }
+
+form input{
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+/*     padding-right:0px ;
+    padding-left: 7px; */
+   
+
+}
+
+textarea{
+    width: 100px;
+    margin-left: 0px;
+    font-size: 14px;
+    padding-right:0px ;
+    padding-left: 0px;
+    padding-top: 0px;
+    text-decoration:none
+
+}
+
+input.name,input.email,input.message {
+    margin-left:0px;
+    padding-right:0px ;
+    padding-left: 0px;
+    text-decoration:none
+}
+
+.btn{
+    width: 67px;
+    height: 26px;
+    /* margin-left:12px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right:0px ;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+
+
+ .max-w-2xl.mx-auto footer{
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+        /* display: flex ; */
+        font-size: 12px;
+
+      }
+
+.max-w-2xl.mx-auto footer span{
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+      }
+ .flex.flex-wrap {
+        flex-direction: column;   
+      }
+    }
